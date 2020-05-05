@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data class="SearchFragmentBinding"/>
+
+    <RelativeLayout
+        android:id="@+id/mainRelative"
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linHead"
+            android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="Looking for something ?"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/profileImageTravel"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.8"
+                app:srcCompat="@drawable/may_the_force_bgdm" />
+
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchQuery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:queryBackground="@android:color/transparent"
+            android:background="@drawable/btn_corner5"
+            android:focusable="false"
+            android:inputType="textCapWords"
+            style="@style/SearchText"
+            app:closeIcon="@drawable/ic_clear_white_24dp"
+            app:iconifiedByDefault="false"
+            app:queryHint="Search for movie or tv shows..."
+            app:searchHintIcon="@drawable/ic_search_24dp"
+            app:searchIcon="@drawable/ic_search_24dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/resultTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.45"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="5dp"
+                android:text="History"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="0.55"
+                android:gravity="end">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/ic_filter_list_black_24dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+<!--    <com.iammert.library.ui.multisearchviewlib.MultiSearchView
+        android:id="@+id/multiSearchView"
+        android:layout_below="@+id/linHead"
+        android:visibility="gone"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linHead"
+            android:id="@+id/relEmpty">
+
+        <ImageView
+            android:layout_width="270dp"
+            android:layout_height="180dp"
+            android:id="@+id/imgEmpty"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_undraw_search"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgEmpty"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="0.45"
+                android:fontFamily="@font/poppins"
+                android:padding="5dp"
+                android:text="No previous searches..."
+                android:textColor="@color/lightgrey" />
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/movies_list"
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:layout_below="@+id/linHead"
+            android:paddingLeft="10dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:clipToPadding="false"
+            tools:listitem="@layout/homescreen_movie_structure"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_list"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_below="@+id/linHead"
+            android:paddingLeft="10dp"
+            android:paddingBottom="70dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:clipToPadding="false"
+            tools:listitem="@layout/homescreen_movie_structure"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+</layout>

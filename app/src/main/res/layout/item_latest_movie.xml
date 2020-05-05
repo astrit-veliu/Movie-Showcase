@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="ListStructureMoviesItemBinding" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mainCard"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/txtTitleFront"
+            android:layout_alignBottom="@+id/txtVoteAverage"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/soft_grey"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/imgPoster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:id="@+id/txtTitleFront"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_toRightOf="@+id/mainCard"
+            android:lines="1"
+            android:layout_marginTop="3dp"
+            android:maxLines="1"
+            android:text="Text i titullit"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mainCard"
+            app:layout_constraintTop_toTopOf="@id/mainCard" />
+
+        <TextView
+            android:id="@+id/txtHouse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="123as"
+            android:textColor="@color/grey"
+            app:layout_constraintBottom_toTopOf="@+id/txtVoteAverage"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/txtTitleFront"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitleFront" />
+
+        <TextView
+            android:id="@+id/txtVoteAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtHouse"
+            android:layout_alignLeft="@+id/txtTitleFront"
+            android:gravity="bottom"
+            android:text="123as"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/grey"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/mainCard"
+            app:layout_constraintStart_toStartOf="@+id/txtTitleFront" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

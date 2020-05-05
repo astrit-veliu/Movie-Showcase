@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.astrit-veliu:Boom:1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d555f9a273ec7c161c68ea41def0621b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d555f9a273ec7c161c68ea41def0621b/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.astrit-veliu/Boom/1.0/6ca9452f97033e4a76fbadca24e1cb3fdc3fbab4/Boom-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

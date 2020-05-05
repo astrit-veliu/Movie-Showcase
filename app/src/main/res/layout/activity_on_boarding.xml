@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="IntroActivityBinding" />
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_undraw_movie_night_fldd"
+        android:layout_above="@+id/headerTextview"
+        android:id="@+id/imgSplash"
+        android:scaleType="fitEnd"
+        android:layout_marginBottom="30dp"
+        android:layout_alignRight="@+id/txtHeader"
+        android:layout_marginLeft="20dp"/>
+
+
+    <TextView
+        android:id="@+id/headerTextview"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:includeFontPadding="false"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:layout_above="@+id/txtHeader"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_semibold"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="70dp"
+        android:textSize="14sp"
+        android:textColor="@color/fontColor"
+        android:fontFamily="@font/poppins"
+        android:layout_marginLeft="20dp"
+        android:includeFontPadding="false"
+        android:id="@+id/txtHeader"
+        android:layout_above="@+id/textFieldName"
+        android:text="who are you good human?"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldName"
+        android:layout_width="match_parent"
+        app:boxCornerRadiusBottomEnd="16sp"
+        app:boxCornerRadiusBottomStart="16sp"
+        app:boxCornerRadiusTopEnd="16sp"
+        app:boxCornerRadiusTopStart="16sp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerInParent="true"
+        android:hint="My name is">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:imeOptions="actionDone"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:useCompatPadding="true"
+        app:srcCompat="@drawable/ic_done_black_24dp"
+        app:tint="@color/white"
+        android:layout_alignParentRight="true"
+        android:id="@+id/fabDone"/>
+
+
+</RelativeLayout>
+
+</layout>

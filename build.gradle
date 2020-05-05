@@ -1,0 +1,68 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.3.21'
+    repositories {
+        google()
+        jcenter()
+
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'android.arch.navigation:navigation-safe-args-gradle-plugin:1.0.0-alpha08'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+subprojects {
+    ext._appcompat_version = "1.1.0"
+    ext._constraintlayout_version = "1.1.3"
+    ext._material_version = "1.0.0"
+    ext._legacy_support_v4_version = "1.0.0"
+    ext._multisearch_view_version = "0.1"
+    ext._boom_version = "1.0"
+
+    ext._retrofit_version = "2.4.0"
+    ext._retrofit2_converter_gson_version = "2.3.0"
+    ext._retrofit2_adapter_rxjava2_version = "2.4.0"
+    ext._okhttp3_logging_interceptor_version = "3.9.1"
+    ext._okhttp3_mockwebserver_version = "3.9.1"
+
+    ext._rxjava2_version = "2.1.0"
+
+    ext._roundedimageview_version = "2.3.0"
+    ext._lottie_version = "3.3.1"
+    ext._picasso_version = "2.71828"
+
+    ext._lifecycle_extensions_version = "2.0.0"
+    ext._navigation_fragment_version = "2.0.0-rc02"
+    ext._navigation_ui_version = "2.0.0-rc02"
+
+    ext._room_runtime_version = "2.0.0"
+    ext._room_rxjava2_version = "2.0.0"
+    ext._room_compiler_version = "2.0.0"
+
+    ext._dagger_android_version = "2.17"
+    ext._dagger_android_support_version = "2.17"
+    ext._dagger_android_processor_version = "2.17"
+    ext._dagger_compiler_version = "2.17"
+
+    ext._junit_version = "4.12"
+    ext._test_runner_version = "1.2.0"
+    ext._espresso_core_version = "3.2.0"
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

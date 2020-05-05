@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="TrendingFragmentBindingBackup"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relContent"
+            android:visibility="visible"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/topMoviesView"
+                android:layout_width="match_parent"
+                android:ellipsize="end"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:text="Top Rated Movies"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/movies_list"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/topMoviesView"
+                android:paddingLeft="10dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:clipToPadding="false"
+                android:layoutAnimation="@anim/layout_animation_slide_from_bottom"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/latestMoviesView"
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@+id/seeMoviesView"
+                android:ellipsize="end"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/movies_list"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:text="Latest Movies"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+            <TextView
+                android:id="@+id/seeMoviesView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See all"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/latestMoviesView"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:layout_alignBottom="@+id/latestMoviesView"
+                android:layout_marginRight="20dp"></TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/latest_movies_list"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/seeMoviesView"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:clipToPadding="false"
+                android:layoutAnimation="@anim/layout_animation_slide_from_bottom"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:id="@+id/latestTVShowsView"
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@+id/seeTVView"
+                android:ellipsize="end"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/latest_movies_list"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:text="Latest TV Shows"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+            <TextView
+                android:id="@+id/seeTVView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See all"
+                android:paddingLeft="15dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/latestTVShowsView"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:layout_alignBottom="@+id/latestTVShowsView"
+                android:layout_marginRight="20dp"></TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/latest_tv_list"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/seeTVView"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:clipToPadding="false"
+                android:layoutAnimation="@anim/layout_animation_slide_from_bottom"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@+id/latest_tv_list"
+                android:background="@color/transparent"></View>
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

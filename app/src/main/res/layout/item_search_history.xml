@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cv13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        app:cardElevation="0dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/numberTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:fontFamily="sans-serif"
+                android:gravity="start"
+                android:padding="2dp"
+                android:text="2"
+                android:textColor="@color/blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:fontFamily="sans-serif"
+                android:layout_below="@+id/numberTxt"
+                android:layout_alignLeft="@+id/numberTxt"
+                android:layout_alignRight="@+id/numberTxt"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="."
+                android:textColor="@color/blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/queryTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:layout_toRightOf="@+id/numberTxt"
+                android:layout_toLeftOf="@+id/cardChar"
+                android:layout_marginLeft="10dp"
+                android:maxLength="120"
+                android:singleLine="true"
+                android:padding="2dp"
+                android:text="@string/lorem"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/typeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_below="@+id/queryTxt"
+                android:layout_toRightOf="@+id/numberTxt"
+                android:layout_toLeftOf="@+id/cardChar"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLength="120"
+                android:maxLines="3"
+                android:padding="2dp"
+                android:text="NDTV"
+                android:textColor="@color/fontColor"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="70dp"
+                android:id="@+id/cardChar"
+                app:cardBackgroundColor="@color/lightgrey"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="5dp">
+
+                <TextView
+                    android:id="@+id/charTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="A"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/timeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cardChar"
+                android:layout_alignLeft="@+id/typeTxt"
+                android:padding="2dp"
+                android:text="30 min ago"
+                android:textColor="@color/fontColor"
+                android:textSize="12sp" />
+
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_toLeftOf="@+id/cardChar"
+                android:layout_alignBottom="@+id/cardChar"
+                android:padding="2dp"
+                android:id="@+id/imgMore"
+                app:srcCompat="@drawable/ic_more_vert_black_24dp"
+                android:tint="@color/fontColor" />
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

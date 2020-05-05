@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/relImage"
+        android:layout_width="30dp"
+        android:background="@drawable/grey_circle"
+        android:layout_height="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:id="@+id/txtFirstLetter"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtName"
+        android:layout_toRightOf="@+id/relImage"
+        android:layout_alignBottom="@+id/relImage"
+        android:layout_alignTop="@+id/relImage"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+
+
+
+   <!-- <com.av.movieshowcase.utils.TextViewMore
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:layout_below="@+id/relImage"
+        android:layout_marginTop="5dp"
+        android:id="@+id/txtReview"
+        android:textSize="12sp"/>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:layout_below="@+id/relImage"
+        android:layout_marginTop="5dp"
+        android:id="@+id/txtReview"
+        android:textSize="12sp"/>
+
+
+    <View
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/relBrowser"
+        android:id="@+id/shadowView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/soft_grey"></View>
+
+
+    <RelativeLayout
+        android:id="@+id/relBrowser"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/txtReview"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_outline_grey26"
+        android:layout_height="wrap_content">
+
+
+        <com.av.movieshowcase.utils.TextViewMore
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_alignBottom="@+id/imgBrowser"
+            android:gravity="center_vertical"
+            android:layout_alignTop="@+id/imgBrowser"
+            android:text="Open in web"
+            android:layout_marginRight="5dp"
+            android:id="@+id/txtView"
+            android:textSize="10sp"/>
+
+        <ImageView
+            android:id="@+id/imgBrowser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/txtView"
+            app:srcCompat="@drawable/ic_open_in_browser_black_24dp"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

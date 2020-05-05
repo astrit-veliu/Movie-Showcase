@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Movie Showcase</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="lorem1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="add_to_watchlist">Add to WatchList</string>
+    <string name="remove_from_watchlist">Remove from WatchList</string>
+    <string name="save_this_movie">Save this movie</string>
+    <string name="add_to_favorites">Save to Favorites</string>
+    <string name="remove_from_favorites">Remove from Favorites</string>
+    <string name="enter_name_warning">C\'mon man, enter your name...</string>
+</resources>

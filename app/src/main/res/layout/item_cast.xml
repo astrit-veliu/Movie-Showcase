@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.av.movieshowcase.utils.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="13dp"
+        android:id="@+id/imgPeople"
+
+        app:civ_border_color="@android:color/transparent"
+        app:civ_border_width="0dp"
+        app:riv_corner_radius="360dp"
+        app:riv_mutate_background="true"
+        app:riv_oval="false" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgPeople"
+        android:id="@+id/txtRole"
+        android:layout_alignLeft="@+id/imgPeople"
+        android:layout_alignRight="@+id/imgPeople"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRole"
+        android:id="@+id/txtName"
+        android:layout_alignLeft="@+id/imgPeople"
+        android:layout_alignRight="@+id/imgPeople"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="8sp"/>
+
+
+</RelativeLayout>

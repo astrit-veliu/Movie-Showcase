@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.Commit451:Viewtiful:1.0.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ad8e86024ccab332fbf180936adf446d/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ad8e86024ccab332fbf180936adf446d/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Commit451/Viewtiful/1.0.3/4a077ace847a2b26d1daad5fb468bf3c8f9406a4/Viewtiful-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,190 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <style name="AppThemePerson" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_draw</item>
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@android:color/white</item>
+        <item name="colorAccent">@color/materialBlue</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="colorControlHighlight">@color/light200</item>
+        <item name="android:windowAnimationStyle">@style/AppTheme.WindowTransition</item>
+        <item name="backgroundColors">@android:color/white</item>
+        <item name="textColors">@color/colorPrimaryDark</item>
+        <item name="navActive">@color/materialBlue</item>
+        <item name="navInActive">@color/fontColor</item>
+        <item name="headerDivider">@color/light100</item>
+        <item name="android:textColorSecondary">@color/fontColor</item>
+        <item name="cardBackground">@color/light100</item>
+        <item name="cardTransparent">@android:color/transparent</item>
+        <item name="buttonCorner">@color/light200</item>
+        <item name="textColorSecondary">@color/fontColor</item>
+        <item name="beta">@color/colorPrimaryDark</item>
+        <item name="autoCompleteTextViewStyle">@style/SearchTextLight</item>
+    </style>
+
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:windowBackground">@drawable/splash_draw</item>
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@android:color/white</item>
+        <item name="colorAccent">@color/materialBlue</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="colorControlHighlight">@color/light200</item>
+        <item name="android:windowAnimationStyle">@style/AppTheme.WindowTransition</item>
+
+        <item name="backgroundColors">@android:color/white</item>
+        <item name="textColors">@color/colorPrimaryDark</item>
+        <item name="navActive">@color/materialBlue</item>
+        <item name="navInActive">@color/fontColor</item>
+        <item name="headerDivider">@color/light100</item>
+        <item name="android:textColorSecondary">@color/fontColor</item>
+        <item name="cardBackground">@color/light100</item>
+        <item name="cardTransparent">@android:color/transparent</item>
+        <item name="buttonCorner">@color/light200</item>
+        <item name="textColorSecondary">@color/fontColor</item>
+        <item name="beta">@color/colorPrimaryDark</item>
+        <item name="autoCompleteTextViewStyle">@style/SearchTextLight</item>
+    </style>
+
+    <style name="DarkTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/materialBlue</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="colorControlHighlight">@color/light200</item>
+        <item name="android:windowAnimationStyle">@style/AppTheme.WindowTransition</item>
+        <item name="backgroundColors">@color/colorPrimaryDark</item>
+        <item name="textColors">@android:color/white</item>
+        <item name="navActive">@color/materialBlue</item>
+        <item name="navInActive">@color/light200</item>
+        <item name="headerDivider">@color/darkLight</item>
+        <item name="android:textColorSecondary">@color/light200</item>
+        <item name="cardBackground">@color/darkLight</item>
+        <item name="cardTransparent">@color/colorPrimaryDark</item>
+        <item name="buttonCorner">@color/darkLight</item>
+        <item name="textColorSecondary">@color/light500</item>
+        <item name="beta">@color/materialBlue</item>
+        <item name="autoCompleteTextViewStyle">@style/SearchText</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+
+    <style name="SheetDialog" parent="Theme.MaterialComponents.BottomSheetDialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+
+    <style name="MyDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/expand_out</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+       <!-- <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>-->
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="TwoWayView" >
+        <item name="android:orientation">vertical</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="SearchText" parent="Widget.AppCompat.Light.AutoCompleteTextView">
+        <item name="android:textColor">@color/lightgrey</item>
+        <item name="android:textColorHint">@color/lightgrey</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="SearchTextLight" parent="Widget.AppCompat.Light.AutoCompleteTextView">
+        <item name="android:textColor">@color/fontColor</item>
+        <item name="android:textColorHint">@color/lightgrey</item>
+        <item name="android:fontFamily">@font/poppins</item>
+    </style>
+
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="colorControlHighlight">@color/light200</item>
+        <item name="android:windowAnimationStyle">@style/AppTheme.WindowTransition</item>
+    </style>
+
+    <style name="CustomTitle1" parent="TextAppearance.AppCompat.Headline">
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textStyle">normal</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+
+
+    <!--   <style name="Splash" parent="Theme.AppCompat.Light.NoActionBar">
+           <item name="android:windowBackground">@drawable/splash_draw</item>
+       </style>-->
+
+
+    <style name="AppTheme.WindowTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+
+
+
+    <style name="RatingBar" parent="Theme.MaterialComponents">
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/grey</item>
+    </style>
+
+
+    <style name="MyBottomNavigationView.ActiveItemTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+
+    <style name="MyBottomNavigationView" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+
+    <style name="AppTheme.Translucent" parent="AppTheme">
+        <!-- using a semi-transparent window background for the drag-back gesture -->
+        <item name="android:windowBackground">@color/scrim</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>
+    </style>
+
+</resources>

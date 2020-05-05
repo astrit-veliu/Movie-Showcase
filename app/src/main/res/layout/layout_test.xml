@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relFooter"
+    android:background="@color/white"
+    android:layout_below="@+id/review_list"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/imgCardFooter"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/soft_grey"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imgPosterFooter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:id="@+id/txtTitleFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/imgCardFooter"
+        android:layout_alignTop="@+id/imgCardFooter"
+        android:lines="1"
+        android:layout_marginTop="3dp"
+        android:maxLines="1"
+        android:text="Text i titullit"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins"
+        android:ellipsize="end"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <RatingBar
+        android:id="@+id/ratingFavFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyleSmall"
+        android:numStars="5"
+        android:stepSize="0.1"
+        android:layout_below="@+id/txtTitleFooter"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black"
+        android:progressTint="@color/white"
+        android:layout_toRightOf="@+id/imgCardFooter"
+        android:layout_marginLeft="10dp"
+        android:isIndicator="true" />
+
+    <TextView
+        android:id="@+id/favoriteViewFooter"
+        android:layout_width="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        android:background="@drawable/round_grey_chip"
+        android:layout_height="wrap_content"
+        android:text="Add  "
+        android:layout_below="@+id/ratingFavFooter"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/imgCardFooter"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        app:drawableTint="@color/white"
+        android:drawableRight="@drawable/ic_favorite_black_24dp" />
+</RelativeLayout>

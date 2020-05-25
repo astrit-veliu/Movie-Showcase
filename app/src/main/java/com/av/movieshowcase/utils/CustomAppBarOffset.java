@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.widget.Toolbar;
 
+import com.av.movieshowcase.ui.base.custom.CircleImageView;
 import com.google.android.material.appbar.AppBarLayout;
 
 public class CustomAppBarOffset implements AppBarLayout.OnOffsetChangedListener {

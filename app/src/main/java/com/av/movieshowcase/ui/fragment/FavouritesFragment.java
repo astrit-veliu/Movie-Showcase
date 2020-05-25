@@ -1,7 +1,6 @@
 package com.av.movieshowcase.ui.fragment;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.graphics.Typeface;
@@ -18,8 +17,6 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.AnimationUtils;
-import android.view.animation.LayoutAnimationController;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -28,19 +25,15 @@ import com.av.movieshowcase.data.callbacks.ProfileCallback;
 import com.av.movieshowcase.data.local.entity.FavoriteItemEntity;
 import com.av.movieshowcase.data.local.entity.FavoriteListEntity;
 import com.av.movieshowcase.data.local.model.EventSender;
-import com.av.movieshowcase.data.remote.model.MovieTrendingResultsResponse;
 import com.av.movieshowcase.databinding.FavouriteFragmentBinding;
 import com.av.movieshowcase.factory.ViewModelFactory;
 import com.av.movieshowcase.ui.adapter.AdapterFavorite;
 import com.av.movieshowcase.ui.adapter.AdapterFavoritePersons;
 import com.av.movieshowcase.ui.base.BaseFragment;
 import com.av.movieshowcase.ui.main.ProfileViewModel;
-import com.av.movieshowcase.utils.RecyclerViewStaggeredAnimationLayoutManager;
+import com.av.movieshowcase.ui.base.custom.recyclerview.RecyclerViewStaggeredAnimationLayoutManager;
 import com.av.movieshowcase.utils.SaveData;
-import com.av.movieshowcase.utils.SpannedGridLayoutManager;
-import com.av.movieshowcase.utils.recyclerview.RecyclerViewLinearManagerAnimation;
-import com.av.movieshowcase.utils.recyclerview.SpannableGridLayoutManager;
-import com.av.movieshowcase.utils.recyclerview.TwoWayLayoutManager;
+import com.av.movieshowcase.ui.base.custom.recyclerview.RecyclerViewLinearManagerAnimation;
 import com.google.android.material.tabs.TabLayout;
 
 import org.greenrobot.eventbus.EventBus;

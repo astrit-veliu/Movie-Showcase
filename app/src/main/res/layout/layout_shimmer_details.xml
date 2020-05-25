@@ -94,7 +94,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <com.av.movieshowcase.utils.CircleImageView
+            <com.av.movieshowcase.ui.base.custom.CircleImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="13dp"
@@ -105,7 +105,7 @@
                 app:riv_mutate_background="true"
                 app:riv_oval="false" />
 
-            <com.av.movieshowcase.utils.CircleImageView
+            <com.av.movieshowcase.ui.base.custom.CircleImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="13dp"
@@ -116,7 +116,7 @@
                 app:riv_mutate_background="true"
                 app:riv_oval="false" />
 
-            <com.av.movieshowcase.utils.CircleImageView
+            <com.av.movieshowcase.ui.base.custom.CircleImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="13dp"
@@ -127,7 +127,7 @@
                 app:riv_mutate_background="true"
                 app:riv_oval="false" />
 
-            <com.av.movieshowcase.utils.CircleImageView
+            <com.av.movieshowcase.ui.base.custom.CircleImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="13dp"
@@ -138,7 +138,7 @@
                 app:riv_mutate_background="true"
                 app:riv_oval="false" />
 
-            <com.av.movieshowcase.utils.CircleImageView
+            <com.av.movieshowcase.ui.base.custom.CircleImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="13dp"
@@ -184,7 +184,7 @@
             android:layout_below="@+id/crewView"
             android:orientation="horizontal">
 
-            <com.av.movieshowcase.utils.CircleImageView
+            <com.av.movieshowcase.ui.base.custom.CircleImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="13dp"
@@ -195,7 +195,7 @@
                 app:riv_mutate_background="true"
                 app:riv_oval="false" />
 
-            <com.av.movieshowcase.utils.CircleImageView
+            <com.av.movieshowcase.ui.base.custom.CircleImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="13dp"
@@ -206,7 +206,7 @@
                 app:riv_mutate_background="true"
                 app:riv_oval="false" />
 
-            <com.av.movieshowcase.utils.CircleImageView
+            <com.av.movieshowcase.ui.base.custom.CircleImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="13dp"
@@ -217,7 +217,7 @@
                 app:riv_mutate_background="true"
                 app:riv_oval="false" />
 
-            <com.av.movieshowcase.utils.CircleImageView
+            <com.av.movieshowcase.ui.base.custom.CircleImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="13dp"
@@ -228,7 +228,7 @@
                 app:riv_mutate_background="true"
                 app:riv_oval="false" />
 
-            <com.av.movieshowcase.utils.CircleImageView
+            <com.av.movieshowcase.ui.base.custom.CircleImageView
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginRight="13dp"

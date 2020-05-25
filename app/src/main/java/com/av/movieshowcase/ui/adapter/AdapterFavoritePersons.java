@@ -7,8 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.DecelerateInterpolator;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityOptionsCompat;
@@ -18,11 +16,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.astritveliu.boom.Boom;
 import com.av.movieshowcase.R;
 import com.av.movieshowcase.data.local.entity.FavoriteItemEntity;
-import com.av.movieshowcase.data.remote.model.movie_details.Crew;
-import com.av.movieshowcase.databinding.FavoriteListItemBinding;
 import com.av.movieshowcase.databinding.ListFavoritePersonItemBinding;
 import com.av.movieshowcase.ui.activity.person.PersonActivity;
-import com.av.movieshowcase.utils.CircleImageView;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

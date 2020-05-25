@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.DecelerateInterpolator;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -13,13 +12,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.astritveliu.boom.Boom;
 import com.av.movieshowcase.R;
-import com.av.movieshowcase.data.remote.model.movie_details.Crew;
 import com.av.movieshowcase.data.remote.model.movie_details.ReviewResult;
-import com.av.movieshowcase.utils.ExpandableTextView;
+import com.av.movieshowcase.ui.base.custom.ExpandableTextView;
 import com.av.movieshowcase.utils.NavigationUtils;
-import com.av.movieshowcase.utils.TextViewMore;
-import com.makeramen.roundedimageview.RoundedImageView;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,7 +55,7 @@ public class AdapterReview extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 
             viewHolder.txtName.setText(item.getAuthor());
             viewHolder.txtFirstLetter.setText(item.getAuthor().substring(0,1));
-            viewHolder.txtReview.setText(item.getContent());
+            viewHolder.txtReview.setContentText(item.getContent());
            // viewHolder.txtReview.setShowingLine(10);
 
             if(item.getUrl()!=null && !item.getUrl().equalsIgnoreCase("")) {
@@ -83,7 +78,7 @@ public class AdapterReview extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         private TextView txtName;
-        private TextView txtReview;
+        private ExpandableTextView txtReview;
       //  private TextViewMore txtReview;
         private View shadowView;
         private RelativeLayout relBrowser;

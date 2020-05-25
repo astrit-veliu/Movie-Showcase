@@ -38,8 +38,7 @@ import com.av.movieshowcase.ui.adapter.AdapterVideo;
 import com.av.movieshowcase.ui.base.BaseActivity;
 import com.av.movieshowcase.ui.main.DetailMovieViewModel;
 import com.av.movieshowcase.utils.NavigationUtils;
-import com.av.movieshowcase.utils.plaid.ElasticDragDismissFrameLayout;
-import com.av.movieshowcase.utils.recyclerview.RecyclerViewLinearManagerAnimation;
+import com.av.movieshowcase.ui.base.custom.recyclerview.RecyclerViewLinearManagerAnimation;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.gson.Gson;
 import com.squareup.picasso.Picasso;
@@ -55,7 +54,6 @@ import static com.av.movieshowcase.utils.ViewUtils.isViewVisibleOnScreen;
 public class DetailsActivity extends BaseActivity implements DetailCallback {
 
     private DetailsActivityBinding binding;
-    private ElasticDragDismissFrameLayout.SystemChromeFader chromeFader;
 
     private MovieTrendingResultsResponse movieTrending;
     private SimilarResult movieSimilar;
@@ -142,7 +140,6 @@ public class DetailsActivity extends BaseActivity implements DetailCallback {
         aniFade = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.fade_in);
         expandIn = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.expand_in);
         expandOut = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.expand_out);
-        chromeFader = new ElasticDragDismissFrameLayout.SystemChromeFader(this);
 
         Double shadowHeight = Double.valueOf(getScreenHeight())/2;
 
@@ -415,12 +412,10 @@ public class DetailsActivity extends BaseActivity implements DetailCallback {
     @Override
     protected void onResume() {
         super.onResume();
-        binding.detailsContainer.addListener(chromeFader);
     }
 
     @Override
     protected void onPause() {
-        binding.detailsContainer.removeListener(chromeFader);
         super.onPause();
     }
 }

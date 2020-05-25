@@ -16,11 +16,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.astritveliu.boom.Boom;
 import com.av.movieshowcase.R;
 import com.av.movieshowcase.data.remote.model.movie_details.Cast;
-import com.av.movieshowcase.data.remote.model.movie_details.Genre;
 import com.av.movieshowcase.ui.activity.person.PersonActivity;
-import com.av.movieshowcase.utils.CircleImageView;
-import com.google.android.material.chip.Chip;
-import com.makeramen.roundedimageview.RoundedImageView;
+import com.av.movieshowcase.ui.base.custom.CircleImageView;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

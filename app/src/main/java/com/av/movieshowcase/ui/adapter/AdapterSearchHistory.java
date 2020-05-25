@@ -1,16 +1,13 @@
 package com.av.movieshowcase.ui.adapter;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -18,10 +15,6 @@ import com.astritveliu.boom.Boom;
 import com.av.movieshowcase.R;
 import com.av.movieshowcase.data.callbacks.SearchAdapterCallback;
 import com.av.movieshowcase.data.local.entity.HistoryEntity;
-import com.av.movieshowcase.data.remote.model.movie_details.Cast;
-import com.av.movieshowcase.ui.activity.person.PersonActivity;
-import com.av.movieshowcase.utils.CircleImageView;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;

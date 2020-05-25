@@ -41,17 +41,7 @@
 
 
 
-
-   <!-- <com.av.movieshowcase.utils.TextViewMore
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textIsSelectable="true"
-        android:layout_below="@+id/relImage"
-        android:layout_marginTop="5dp"
-        android:id="@+id/txtReview"
-        android:textSize="12sp"/>-->
-
-    <TextView
+    <com.av.movieshowcase.ui.base.custom.ExpandableTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textIsSelectable="true"
@@ -81,7 +71,7 @@
         android:layout_height="wrap_content">
 
 
-        <com.av.movieshowcase.utils.TextViewMore
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"

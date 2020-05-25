@@ -17,12 +17,7 @@
             app:dragDismissEnableBottomDrag="true">-->
 
 
-    <com.av.movieshowcase.utils.plaid.ElasticDragDismissFrameLayout
-        android:id="@+id/details_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:dragDismissDistance="@dimen/drag_dismiss_distance"
-        app:dragDismissScale="0.95">
+
 
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -655,7 +650,7 @@
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-    </com.av.movieshowcase.utils.plaid.ElasticDragDismissFrameLayout>
+
 
     <!-- </com.av.movieshowcase.utils.draggable.ElasticDragDismissFrameLayout>-->
 </layout>

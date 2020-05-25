@@ -36,6 +36,8 @@ public class MovieRepository {
         this.apiMovie = apiMovie;
     }
 
+
+    //todo completly redesign api with rxjava comined with room for offline
 /*
     public LiveData<Resource<MovieTrendingResponse>> loadPopularMovies() {
         return new NetworkBoundResource<MovieTrendingResponse, MovieTrendingResponse>() {
